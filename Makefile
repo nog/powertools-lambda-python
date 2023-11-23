@@ -13,7 +13,7 @@ dev:
 
 dev-gitpod:
 	pip install --upgrade pip poetry
-	@$(MAKE) dev-version-plugin
+	$(MAKE) dev-version-plugin
 	poetry install --extras "all datamasking-aws-sdk"
 	pre-commit install
 
